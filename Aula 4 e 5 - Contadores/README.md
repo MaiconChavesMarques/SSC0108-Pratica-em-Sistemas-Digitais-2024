@@ -1,0 +1,1 @@
+# SSC0108-Pratica-em-Sistemas-Digitais-2024
