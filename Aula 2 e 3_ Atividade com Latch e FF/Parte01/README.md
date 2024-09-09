@@ -2,7 +2,7 @@
 
 Utilizado o Software Intel® Quartus® Prime
 
-(Placa Pequena) DE0_CV:
+(Placa Pequena) DE0_CV:<br/>
 Cyclone V: 5CEBA4F23C7
 
 Implementar e testar um circuito latch RS.
