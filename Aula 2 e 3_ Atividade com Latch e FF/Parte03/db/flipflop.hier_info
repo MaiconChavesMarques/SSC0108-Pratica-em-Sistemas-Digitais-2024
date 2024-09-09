@@ -1,0 +1,26 @@
+|flipflop
+QA <= latch2:inst1.QA
+D => latch2:inst.D
+CLK => inst2.IN0
+CLK => latch2:inst1.CLK
+QB <= latch2:inst1.QB
+
+
+|flipflop|latch2:inst1
+QA <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+CLK => inst1.IN1
+CLK => inst.IN0
+QB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flipflop|latch2:inst
+QA <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+CLK => inst1.IN1
+CLK => inst.IN0
+QB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "QaLatch",
+					"strict" : false
+				},
+				{
+					"name" : "QbFFUP",
+					"strict" : false
+				},
+				{
+					"name" : "QaFFUP",
+					"strict" : false
+				},
+				{
+					"name" : "QaFFDOWN",
+					"strict" : false
+				},
+				{
+					"name" : "QbLatch",
+					"strict" : false
+				},
+				{
+					"name" : "QbFFDOWN",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

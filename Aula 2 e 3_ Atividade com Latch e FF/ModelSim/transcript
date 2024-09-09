@@ -1,0 +1,29 @@
+# Compile of flipflop.vhd was successful.
+vsim -gui work.flipflop
+# vsim -gui work.flipflop 
+# Start time: 17:47:24 on Aug 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.flipflop(bdf_type)
+# Loading work.latch2(bdf_type)
+run
+add wave -position insertpoint sim:/flipflop/*
+force -freeze sim:/flipflop/D 0 0
+force -freeze sim:/flipflop/CLK 0 0
+force -freeze sim:/flipflop/QA 0 0
+force -freeze sim:/flipflop/QB 0 0
+run
+force -freeze sim:/flipflop/D 1 0
+add wave -position insertpoint  \
+sim:/flipflop/QB
+force -freeze sim:/flipflop/QB 1 0
+run
+force -freeze sim:/flipflop/CLK 1 0
+force -freeze sim:/flipflop/QA 1 0
+force -freeze sim:/flipflop/QB 0 0
+run
+force -freeze sim:/flipflop/CLK 0 0
+run
+# End time: 17:53:14 on Aug 20,2024, Elapsed time: 0:05:50
+# Errors: 0, Warnings: 0
