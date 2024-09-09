@@ -1,0 +1,33 @@
+{C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity part4
+-- Compiling architecture bdf_type of part4
+
+} {} {}} {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity flipflop
+-- Compiling architecture bdf_type of flipflop
+
+} {} {}} {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity latch2
+-- Compiling architecture bdf_type of latch2
+
+} {} {}} {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity part1
+-- Compiling architecture Structural of part1
+
+} {} {}}

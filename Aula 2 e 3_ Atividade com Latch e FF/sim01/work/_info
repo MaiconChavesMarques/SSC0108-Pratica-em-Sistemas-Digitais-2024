@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Eflipflop
+Z0 w1724186823
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/maico/Desktop/sim01
+Z4 8C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd
+Z5 FC:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd
+l0
+L25
+V`MK@3C4XYlA3Q2Cf@f2lL0
+!s100 z65=k[M=?k4KN<:<o8=9z0
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1725910172
+!i10b 1
+Z8 !s108 1725910172.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd|
+Z10 !s107 C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte03/flipflop.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abdf_type
+R1
+R2
+DEx4 work 8 flipflop 0 22 `MK@3C4XYlA3Q2Cf@f2lL0
+l49
+L35
+V^n9FjOc`JeN19B4HCA@P^1
+!s100 `:;4X9k:UOffgRb^djD9a2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elatch2
+Z13 w1724185100
+R1
+R2
+R3
+Z14 8C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd
+Z15 FC:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd
+l0
+L25
+VnBNh^:6Lc^G@eLMAY0aE`2
+!s100 Ak7=4gh`G@<@<LMcU4jU;2
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd|
+Z17 !s107 C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte02/latch2.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 6 latch2 0 22 nBNh^:6Lc^G@eLMAY0aE`2
+l44
+L35
+ViSkLRel;REQddzCD1n;B:0
+!s100 ACX:]AAEcO]?c5[bWTDcD2
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Epart1
+Z18 w1724094412
+R1
+R2
+R3
+Z19 8C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd
+Z20 FC:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd
+l0
+L5
+Vo6FGgPDDVM[K<WYfzFce<1
+!s100 A_`nQLdgb8P[j8dT?2d6o0
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd|
+Z22 !s107 C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte01/part1.vhd|
+!i113 1
+R11
+R12
+Astructural
+R1
+R2
+DEx4 work 5 part1 0 22 o6FGgPDDVM[K<WYfzFce<1
+l14
+L10
+VSl=l;^dFk>gR_SmH?<V<40
+!s100 @>1WOaLZSQBn^ZWc;4lEo1
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Epart4
+Z23 w1724715318
+R1
+R2
+R3
+Z24 8C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd
+Z25 FC:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd
+l0
+L25
+V7MaU`S79397j5`Yj6RAjm1
+!s100 c5;?Y_dCUVH`9KC@2BSe^3
+R6
+32
+Z26 !s110 1725910908
+!i10b 1
+Z27 !s108 1725910908.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd|
+Z29 !s107 C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Projeto 1_ Latches, Flip-flops, and Registers/Parte04/part4.vhd|
+!i113 1
+R11
+R12
+Abdf_type
+R1
+R2
+DEx4 work 5 part4 0 22 7MaU`S79397j5`Yj6RAjm1
+l60
+L39
+VP?aCEMz_S;TCc6T6J:1GY0
+!s100 0>HYH:b_XK[d>5i5lL`j10
+R6
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R11
+R12
