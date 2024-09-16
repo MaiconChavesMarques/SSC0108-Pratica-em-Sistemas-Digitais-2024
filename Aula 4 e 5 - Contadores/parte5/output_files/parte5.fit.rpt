@@ -1,6 +1,6 @@
 Fitter report for parte5
-Fri Sep 13 23:01:42 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Sat Sep 14 11:40:41 2024
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -43,7 +43,7 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -60,30 +60,30 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Fitter Summary                                                                   ;
-+---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Fri Sep 13 23:01:42 2024          ;
-; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; parte5                                         ;
-; Top-level Entity Name           ; parte5                                         ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CEBA4F23C7                                    ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 51 / 18,480 ( < 1 % )                          ;
-; Total registers                 ; 44                                             ;
-; Total pins                      ; 45 / 224 ( 20 % )                              ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                          ;
-; Total RAM Blocks                ; 0 / 308 ( 0 % )                                ;
-; Total DSP Blocks                ; 0 / 66 ( 0 % )                                 ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 4 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Fitter Summary                                                                ;
++---------------------------------+---------------------------------------------+
+; Fitter Status                   ; Successful - Sat Sep 14 11:40:41 2024       ;
+; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                   ; parte5                                      ;
+; Top-level Entity Name           ; parte5                                      ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 51 / 18,480 ( < 1 % )                       ;
+; Total registers                 ; 44                                          ;
+; Total pins                      ; 45 / 224 ( 20 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -150,22 +150,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
-;     Processor 8            ;   0.2%      ;
-;     Processors 9-12        ;   0.1%      ;
+;     Processor 2            ;   0.5%      ;
+;     Processor 3            ;   0.4%      ;
+;     Processor 4            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -216,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/output_files/parte5.pin.
+The pin-out file can be found in C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte5/output_files/parte5.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -226,12 +221,12 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 51 / 18,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 51                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 52 / 18,480        ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 51 / 18,480        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 21                 ;       ;
 ;         [b] ALMs used for LUT logic                         ; 29                 ;       ;
-;         [c] ALMs used for registers                         ; 2                  ;       ;
+;         [c] ALMs used for registers                         ; 1                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 18,480         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18,480         ; 0 %   ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -240,8 +235,8 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 8 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 8                  ;       ;
+; Total LABs:  partially or completely used                   ; 7 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 7                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 96                 ;       ;
@@ -285,11 +280,11 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.6% / 0.6% / 0.6% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 1.2% / 1.2% / 1.1% ;       ;
 ; Maximum fan-out                                             ; 44                 ;       ;
 ; Highest non-global fan-out                                  ; 26                 ;       ;
-; Total fan-out                                               ; 495                ;       ;
-; Average fan-out                                             ; 2.14               ;       ;
+; Total fan-out                                               ; 501                ;       ;
+; Average fan-out                                             ; 2.17               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -300,12 +295,12 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 51 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 51                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 52 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 51 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 21                   ; 0                              ;
 ;         [b] ALMs used for LUT logic                         ; 29                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 2                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 1                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -314,8 +309,8 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 8 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 8                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 7 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 7                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Combinational ALUT usage for logic                          ; 96                   ; 0                              ;
@@ -352,8 +347,8 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 495                  ; 0                              ;
-;     -- Registered Connections                               ; 190                  ; 0                              ;
+;     -- Total Connections                                    ; 501                  ; 0                              ;
+;     -- Registered Connections                               ; 196                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -386,7 +381,7 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; clear   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; clock   ; U7    ; 3A       ; 10           ; 0            ; 91           ; 44                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clock   ; M9    ; 3B       ; 22           ; 0            ; 0            ; 44                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; enable1 ; V13   ; 4A       ; 33           ; 0            ; 57           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -447,8 +442,8 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
 +----------+------------------+---------------+--------------+---------------+
 ; 2A       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 1 / 16 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 4 / 32 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 5 / 32 ( 16 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 38 / 48 ( 79 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -756,7 +751,7 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ; M6       ; 70         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M7       ; 72         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M8       ; 86         ; 3B       ; F1                              ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; M9       ; 88         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; M9       ; 88         ; 3B       ; clock                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; M10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -864,7 +859,7 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/ou
 ; U4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U6       ; 67         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U7       ; 59         ; 3A       ; clock                           ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; U7       ; 59         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U8       ; 61         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U10      ; 85         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1008,14 +1003,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
-; |parte5                    ; 50.5 (0.5)           ; 51.0 (0.5)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 96 (1)              ; 44 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 45   ; 0            ; |parte5                ; parte5      ; work         ;
+; |parte5                    ; 50.5 (0.5)           ; 50.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 96 (1)              ; 44 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 45   ; 0            ; |parte5                ; parte5      ; work         ;
 ;    |aula04:inst2|          ; 3.3 (3.3)            ; 3.5 (3.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst2   ; aula04      ; work         ;
 ;    |aula04:inst3|          ; 3.3 (3.3)            ; 3.5 (3.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst3   ; aula04      ; work         ;
-;    |aula04:inst4|          ; 3.3 (3.3)            ; 3.3 (3.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst4   ; aula04      ; work         ;
-;    |aula04:inst5|          ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst5   ; aula04      ; work         ;
+;    |aula04:inst4|          ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst4   ; aula04      ; work         ;
+;    |aula04:inst5|          ; 2.8 (2.8)            ; 2.8 (2.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst5   ; aula04      ; work         ;
 ;    |aula04:inst6|          ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst6   ; aula04      ; work         ;
-;    |aula04:inst8|          ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst8   ; aula04      ; work         ;
-;    |palavra06:inst|        ; 29.3 (29.3)          ; 29.7 (29.7)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 53 (53)             ; 44 (44)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|palavra06:inst ; palavra06   ; work         ;
+;    |aula04:inst8|          ; 3.3 (3.3)            ; 3.3 (3.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|aula04:inst8   ; aula04      ; work         ;
+;    |palavra06:inst|        ; 29.3 (29.3)          ; 30.0 (30.0)                      ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 53 (53)             ; 44 (44)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |parte5|palavra06:inst ; palavra06   ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1068,7 +1063,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; F5      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; F6      ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clear   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; clock   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; clock   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; enable1 ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +---------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
@@ -1101,7 +1096,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - palavra06:inst|contador_interno[0]~0 ; 0                 ; 0       ;
 ;      - palavra06:inst|contador_interno[0]~1 ; 0                 ; 0       ;
 ; clock                                       ;                   ;         ;
-;      - clock~inputCLKENA0                   ; 1                 ; 0       ;
 ; enable1                                     ;                   ;         ;
 ;      - palavra06:inst|ff[0]~1               ; 0                 ; 0       ;
 ;      - palavra06:inst|contador_interno[0]~1 ; 0                 ; 0       ;
@@ -1113,10 +1107,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                 ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clock                                ; PIN_U7              ; 44      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; palavra06:inst|contador_interno[0]~0 ; MLABCELL_X42_Y1_N30 ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; palavra06:inst|contador_interno[0]~1 ; LABCELL_X43_Y1_N48  ; 26      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; palavra06:inst|ff[0]~1               ; LABCELL_X43_Y2_N27  ; 18      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clock                                ; PIN_M9              ; 44      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; palavra06:inst|contador_interno[0]~0 ; MLABCELL_X37_Y3_N54 ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; palavra06:inst|contador_interno[0]~1 ; LABCELL_X36_Y4_N27  ; 26      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; palavra06:inst|ff[0]~1               ; LABCELL_X36_Y4_N21  ; 18      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1125,7 +1119,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------+----------------------+------------------+---------------------------+
 ; Name  ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
-; clock ; PIN_U7   ; 44      ; Global Clock         ; GCLK6            ; --                        ;
+; clock ; PIN_M9   ; 44      ; Global Clock         ; GCLK6            ; --                        ;
 +-------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1134,10 +1128,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-------------------------+
 ; Routing Resource Type        ; Usage                   ;
 +------------------------------+-------------------------+
-; Block interconnects          ; 106 / 140,056 ( < 1 % ) ;
+; Block interconnects          ; 104 / 140,056 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 6,048 ( 0 % )       ;
-; C2 interconnects             ; 42 / 54,648 ( < 1 % )   ;
-; C4 interconnects             ; 33 / 25,920 ( < 1 % )   ;
+; C2 interconnects             ; 32 / 54,648 ( < 1 % )   ;
+; C4 interconnects             ; 50 / 25,920 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
@@ -1145,10 +1139,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Global clocks                ; 1 / 16 ( 6 % )          ;
 ; Local interconnects          ; 37 / 36,960 ( < 1 % )   ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
-; R14 interconnects            ; 11 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 11 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 76 / 60,192 ( < 1 % )   ;
-; R6 interconnects             ; 38 / 127,072 ( < 1 % )  ;
+; R14 interconnects            ; 13 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 13 / 9,504 ( < 1 % )    ;
+; R3 interconnects             ; 67 / 60,192 ( < 1 % )   ;
+; R6 interconnects             ; 60 / 127,072 ( < 1 % )  ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )       ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
 +------------------------------+-------------------------+
@@ -1309,7 +1303,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clock           ; clock                ; 2.1               ;
+; clock           ; clock                ; 1.8               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1320,23 +1314,22 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------+-----------------------+-------------------+
 ; Source Register       ; Destination Register  ; Delay Added in ns ;
 +-----------------------+-----------------------+-------------------+
-; palavra06:inst|ff[4]  ; palavra06:inst|ff[8]  ; 0.314             ;
-; palavra06:inst|ff[20] ; palavra06:inst|ff[0]  ; 0.297             ;
-; palavra06:inst|ff[5]  ; palavra06:inst|ff[9]  ; 0.297             ;
-; palavra06:inst|ff[14] ; palavra06:inst|ff[18] ; 0.284             ;
-; palavra06:inst|ff[18] ; palavra06:inst|ff[22] ; 0.284             ;
-; palavra06:inst|ff[9]  ; palavra06:inst|ff[13] ; 0.283             ;
-; palavra06:inst|ff[12] ; palavra06:inst|ff[16] ; 0.153             ;
-; palavra06:inst|ff[10] ; palavra06:inst|ff[14] ; 0.153             ;
+; palavra06:inst|ff[2]  ; palavra06:inst|ff[6]  ; 0.300             ;
+; palavra06:inst|ff[6]  ; palavra06:inst|ff[10] ; 0.290             ;
+; palavra06:inst|ff[21] ; palavra06:inst|ff[1]  ; 0.290             ;
+; palavra06:inst|ff[4]  ; palavra06:inst|ff[8]  ; 0.285             ;
+; palavra06:inst|ff[22] ; palavra06:inst|ff[2]  ; 0.283             ;
+; palavra06:inst|ff[20] ; palavra06:inst|ff[0]  ; 0.168             ;
+; palavra06:inst|ff[17] ; palavra06:inst|ff[21] ; 0.167             ;
 +-----------------------+-----------------------+-------------------+
-Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 7 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "parte5"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1345,11 +1338,7 @@ Warning (292013): Feature LogicLock is only available with a valid subscription 
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clock~inputCLKENA0 with 44 fanout uses global clock CLKCTRL_G4
-        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
-Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
-    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clock~inputCLKENA0, placed at CLKCTRL_G4
-        Info (179012): Refclk input I/O pad clock is placed onto PIN_U7
+    Info (11162): clock~inputCLKENA0 with 44 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1362,33 +1351,33 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:09
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.27 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file C:/Users/maico/Desktop/aula04e05 - FF/parte5/output_files/parte5.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6999 megabytes
-    Info: Processing ended: Fri Sep 13 23:01:42 2024
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:01:10
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (144001): Generated suppressed messages file C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte5/output_files/parte5.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 6237 megabytes
+    Info: Processing ended: Sat Sep 14 11:40:42 2024
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte5/output_files/parte5.fit.smsg.
+The suppressed messages can be found in C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte5/output_files/parte5.fit.smsg.
 
 

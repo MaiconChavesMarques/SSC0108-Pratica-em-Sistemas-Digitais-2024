@@ -1,6 +1,6 @@
 Analysis & Synthesis report for parte4
-Fri Sep 13 22:57:56 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Sat Sep 14 11:36:42 2024
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -25,7 +25,7 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -42,27 +42,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Sep 13 22:57:56 2024          ;
-; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; parte4                                         ;
-; Top-level Entity Name           ; parte4                                         ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 36                                             ;
-; Total pins                      ; 31                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Sep 14 11:36:42 2024       ;
+; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                   ; parte4                                      ;
+; Top-level Entity Name           ; parte4                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 36                                          ;
+; Total pins                      ; 31                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -157,27 +157,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------+---------+
-; parte4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maico/Desktop/aula04e05 - FF/parte4/parte4.bdf    ;         ;
-; aula04.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/maico/Desktop/aula04e05 - FF/parte4/aula04.bdf    ;         ;
-; palavra04.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/maico/Desktop/aula04e05 - FF/parte4/palavra04.vhd ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
+; parte4.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte4/parte4.bdf    ;         ;
+; aula04.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte4/aula04.bdf    ;         ;
+; palavra04.vhd                    ; yes             ; Auto-Found VHDL File                     ; C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte4/palavra04.vhd ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -202,8 +202,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 36          ;
-; Total fan-out                               ; 386         ;
-; Average fan-out                             ; 2.26        ;
+; Total fan-out                               ; 390         ;
+; Average fan-out                             ; 2.28        ;
 +---------------------------------------------+-------------+
 
 
@@ -271,19 +271,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_ff             ; 36                          ;
 ;     ENA               ; 10                          ;
 ;     ENA SCLR          ; 26                          ;
-; arriav_lcell_comb     ; 97                          ;
+; arriav_lcell_comb     ; 95                          ;
 ;     arith             ; 26                          ;
 ;         1 data inputs ; 26                          ;
-;     normal            ; 71                          ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 24                          ;
+;     normal            ; 69                          ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 28                          ;
 ;         4 data inputs ; 2                           ;
 ;         6 data inputs ; 5                           ;
 ; boundary_port         ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.50                        ;
-; Average LUT depth     ; 2.35                        ;
+; Average LUT depth     ; 2.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -301,11 +301,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 13 22:57:48 2024
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Processing started: Sat Sep 14 11:36:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off parte4 -c parte4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file parte4.bdf
     Info (12023): Found entity 1: parte4
 Info (12127): Elaborating entity "parte4" for the top level hierarchy
@@ -318,8 +318,8 @@ Warning (275011): Block or symbol "NOT" of instance "inst71" overlaps another bl
 Warning (275011): Block or symbol "NOT" of instance "inst76" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst78" overlaps another block or symbol
 Warning (12125): Using design file palavra04.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: palavra04-Behavioral File: C:/Users/maico/Desktop/aula04e05 - FF/parte4/palavra04.vhd Line: 29
-    Info (12023): Found entity 1: palavra04 File: C:/Users/maico/Desktop/aula04e05 - FF/parte4/palavra04.vhd Line: 5
+    Info (12022): Found design unit 1: palavra04-Behavioral File: C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte4/palavra04.vhd Line: 29
+    Info (12023): Found entity 1: palavra04 File: C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte4/palavra04.vhd Line: 5
 Info (12128): Elaborating entity "palavra04" for hierarchy "palavra04:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -329,9 +329,9 @@ Info (21057): Implemented 104 device resources after synthesis - the final resou
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 73 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Fri Sep 13 22:57:56 2024
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Sat Sep 14 11:36:42 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 

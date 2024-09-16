@@ -1,6 +1,6 @@
 Fitter report for parte2
-Fri Sep 13 22:51:20 2024
-Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Sat Sep 14 11:02:46 2024
+Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
 ---------------------
@@ -33,15 +33,17 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
  25. I/O Rules Matrix
  26. Fitter Device Options
  27. Operating Settings and Conditions
- 28. Fitter Messages
- 29. Fitter Suppressed Messages
+ 28. Estimated Delay Added for Hold Timing Summary
+ 29. Estimated Delay Added for Hold Timing Details
+ 30. Fitter Messages
+ 31. Fitter Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2021  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -58,30 +60,30 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Fitter Summary                                                                   ;
-+---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Fri Sep 13 22:51:20 2024          ;
-; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; parte2                                         ;
-; Top-level Entity Name           ; parte2                                         ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CEBA4F23C7                                    ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 23 / 18,480 ( < 1 % )                          ;
-; Total registers                 ; 16                                             ;
-; Total pins                      ; 31 / 224 ( 14 % )                              ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                          ;
-; Total RAM Blocks                ; 0 / 308 ( 0 % )                                ;
-; Total DSP Blocks                ; 0 / 66 ( 0 % )                                 ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 4 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Fitter Summary                                                                ;
++---------------------------------+---------------------------------------------+
+; Fitter Status                   ; Successful - Sat Sep 14 11:02:46 2024       ;
+; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Revision Name                   ; parte2                                      ;
+; Top-level Entity Name           ; parte2                                      ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 23 / 18,480 ( < 1 % )                       ;
+; Total registers                 ; 16                                          ;
+; Total pins                      ; 31 / 224 ( 14 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -148,18 +150,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.01        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
 ;     Processor 4            ;   0.2%      ;
-;     Processors 5-12        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -210,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte2/output_files/parte2.pin.
+The pin-out file can be found in C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte2/output_files/parte2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -279,7 +280,7 @@ The pin-out file can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte2/ou
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.3% / 0.1% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.3% / 0.1% ;       ;
 ; Maximum fan-out                                             ; 17                 ;       ;
 ; Highest non-global fan-out                                  ; 17                 ;       ;
 ; Total fan-out                                               ; 269                ;       ;
@@ -1078,7 +1079,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 49 / 140,056 ( < 1 % ) ;
+; Block interconnects          ; 54 / 140,056 ( < 1 % ) ;
 ; C12 interconnects            ; 1 / 6,048 ( < 1 % )    ;
 ; C2 interconnects             ; 17 / 54,648 ( < 1 % )  ;
 ; C4 interconnects             ; 14 / 25,920 ( < 1 % )  ;
@@ -1087,12 +1088,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
 ; Direct links                 ; 8 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 1 / 16 ( 6 % )         ;
-; Local interconnects          ; 17 / 36,960 ( < 1 % )  ;
+; Local interconnects          ; 12 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
 ; R14 interconnects            ; 2 / 5,984 ( < 1 % )    ;
 ; R14/C12 interconnect drivers ; 2 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 31 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 17 / 127,072 ( < 1 % ) ;
+; R3 interconnects             ; 34 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 18 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 120 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1234,11 +1235,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clock           ; clock                ; 2.4               ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++---------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                               ;
++------------------------------------+------------------------------------+-------------------+
+; Source Register                    ; Destination Register               ; Delay Added in ns ;
++------------------------------------+------------------------------------+-------------------+
+; contador:inst|contador_interno[1]  ; contador:inst|contador_interno[14] ; 0.256             ;
+; contador:inst|contador_interno[15] ; contador:inst|contador_interno[15] ; 0.254             ;
+; contador:inst|contador_interno[7]  ; contador:inst|contador_interno[14] ; 0.246             ;
+; contador:inst|contador_interno[3]  ; contador:inst|contador_interno[14] ; 0.242             ;
+; contador:inst|contador_interno[9]  ; contador:inst|contador_interno[14] ; 0.238             ;
+; contador:inst|contador_interno[5]  ; contador:inst|contador_interno[14] ; 0.218             ;
+; contador:inst|contador_interno[12] ; contador:inst|contador_interno[14] ; 0.212             ;
+; contador:inst|contador_interno[8]  ; contador:inst|contador_interno[14] ; 0.205             ;
+; contador:inst|contador_interno[6]  ; contador:inst|contador_interno[14] ; 0.204             ;
+; contador:inst|contador_interno[13] ; contador:inst|contador_interno[14] ; 0.199             ;
+; contador:inst|contador_interno[0]  ; contador:inst|contador_interno[14] ; 0.136             ;
++------------------------------------+------------------------------------+-------------------+
+Note: This table only shows the top 11 path(s) that have the largest delay added for hold.
+
+
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "parte2"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1247,16 +1279,16 @@ Warning (292013): Feature LogicLock is only available with a valid subscription 
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clock~inputCLKENA0 with 16 fanout uses global clock CLKCTRL_G4
+    Info (11162): clock~inputCLKENA0 with 16 fanout uses global clock CLKCTRL_G6
         Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
 Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
-    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clock~inputCLKENA0, placed at CLKCTRL_G4
+    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clock~inputCLKENA0, placed at CLKCTRL_G6
         Info (179012): Refclk input I/O pad clock is placed onto PIN_U7
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'parte2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1264,7 +1296,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
@@ -1273,24 +1305,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.37 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.24 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file C:/Users/maico/Desktop/aula04e05 - FF/parte2/output_files/parte2.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (144001): Generated suppressed messages file C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte2/output_files/parte2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6979 megabytes
-    Info: Processing ended: Fri Sep 13 22:51:21 2024
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 6230 megabytes
+    Info: Processing ended: Sat Sep 14 11:02:46 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/maico/Desktop/aula04e05 - FF/parte2/output_files/parte2.fit.smsg.
+The suppressed messages can be found in C:/Users/14593530/Desktop/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 4 e 5 - Contadores/parte2/output_files/parte2.fit.smsg.
 
 

@@ -1,7 +1,7 @@
 |parte2
 A0 <= aula04:inst2.a
 enable1 => contador:inst.enable
-clock => contador:inst.clock
+clock => inst1.IN0
 clear => contador:inst.reset
 A1 <= aula04:inst2.b
 A2 <= aula04:inst2.c

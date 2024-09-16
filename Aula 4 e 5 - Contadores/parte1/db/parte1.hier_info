@@ -1,7 +1,7 @@
 |parte1
 A0 <= aula04:inst2.a
 enable1 => contador_8bits:inst1.enable1
-clock => contador_8bits:inst1.clock
+clock => inst.IN0
 clear => contador_8bits:inst1.clear
 A1 <= aula04:inst2.b
 A2 <= aula04:inst2.c
