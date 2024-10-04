@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Oct  3 22:32:55 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : memoria2
+Top-level Entity Name : memoria2
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 37
+Total pins : 54
+Total virtual pins : 0
+Total block memory bits : 128
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
