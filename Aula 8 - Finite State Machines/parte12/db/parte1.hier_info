@@ -1,0 +1,286 @@
+|parte1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+w => Q_entrada_internal.IN1
+clock => flipflop:dff1.CLK
+clock => z~reg0.CLK
+clock => flipflop:dff2.CLK
+clock => flipflop:dff3.CLK
+clock => flipflop:dff4.CLK
+clock => flipflop:dff5.CLK
+clock => flipflop:dff6.CLK
+clock => flipflop:dff7.CLK
+clock => flipflop:dff8.CLK
+clock => flipflop:dff9.CLK
+clock => Q_entrada_internal[0].CLK
+clock => Q_entrada_internal[1].CLK
+clock => Q_entrada_internal[2].CLK
+clock => Q_entrada_internal[3].CLK
+clock => Q_entrada_internal[4].CLK
+clock => Q_entrada_internal[5].CLK
+clock => Q_entrada_internal[6].CLK
+clock => Q_entrada_internal[7].CLK
+clock => Q_entrada_internal[8].CLK
+clear => z~reg0.ACLR
+clear => Q_entrada_internal[0].ACLR
+clear => Q_entrada_internal[1].ACLR
+clear => Q_entrada_internal[2].ACLR
+clear => Q_entrada_internal[3].ACLR
+clear => Q_entrada_internal[4].ACLR
+clear => Q_entrada_internal[5].ACLR
+clear => Q_entrada_internal[6].ACLR
+clear => Q_entrada_internal[7].ACLR
+clear => Q_entrada_internal[8].ACLR
+data_out[0] <= flipflop:dff1.QA
+data_out[1] <= flipflop:dff2.QA
+data_out[2] <= flipflop:dff3.QA
+data_out[3] <= flipflop:dff4.QA
+data_out[4] <= flipflop:dff5.QA
+data_out[5] <= flipflop:dff6.QA
+data_out[6] <= flipflop:dff7.QA
+data_out[7] <= flipflop:dff8.QA
+data_out[8] <= flipflop:dff9.QA
+z <= z~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff1
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff1|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff1|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff2
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff2|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff2|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff3
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff3|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff3|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff4
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff4|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff4|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff5
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff5|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff5|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff6
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff6|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff6|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff7
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff7|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff7|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff8
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff8|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff8|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff9
+D => latch2:b2v_inst.D
+CLK => latch2:b2v_inst1.CLK
+CLK => latch2:b2v_inst.CLK
+QA <= latch2:b2v_inst1.QA
+QB <= latch2:b2v_inst1.QB
+
+
+|parte1|flipflop:dff9|latch2:b2v_inst
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parte1|flipflop:dff9|latch2:b2v_inst1
+D => SYNTHESIZED_WIRE_2.IN0
+D => SYNTHESIZED_WIRE_3.IN0
+CLK => SYNTHESIZED_WIRE_2.IN1
+CLK => SYNTHESIZED_WIRE_3.IN1
+QA <= QA.DB_MAX_OUTPUT_PORT_TYPE
+QB <= SYNTHESIZED_WIRE_1.DB_MAX_OUTPUT_PORT_TYPE
+
+
