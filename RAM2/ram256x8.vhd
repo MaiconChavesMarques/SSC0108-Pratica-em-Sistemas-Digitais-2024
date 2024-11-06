@@ -4,7 +4,7 @@
 -- MODULE: altsyncram 
 
 -- ============================================================
--- File Name: ram8x8.vhd
+-- File Name: ram256x8.vhd
 -- Megafunction Name(s):
 -- 			altsyncram
 --
@@ -40,20 +40,20 @@ USE ieee.std_logic_1164.all;
 LIBRARY altera_mf;
 USE altera_mf.altera_mf_components.all;
 
-ENTITY ram8x8 IS
+ENTITY ram256x8 IS
 	PORT
 	(
 		clock		: IN STD_LOGIC  := '1';
 		data		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
-		rdaddress		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
-		wraddress		: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+		rdaddress		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		wraddress		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
 		wren		: IN STD_LOGIC  := '0';
 		q		: OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 	);
-END ram8x8;
+END ram256x8;
 
 
-ARCHITECTURE SYN OF ram8x8 IS
+ARCHITECTURE SYN OF ram256x8 IS
 
 	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (7 DOWNTO 0);
 
@@ -67,19 +67,19 @@ BEGIN
 		clock_enable_input_a => "BYPASS",
 		clock_enable_input_b => "BYPASS",
 		clock_enable_output_b => "BYPASS",
-		init_file => "ram8x8.mif",
+		init_file => "ram256X8.mif",
 		intended_device_family => "Cyclone V",
 		lpm_type => "altsyncram",
-		numwords_a => 64,
-		numwords_b => 64,
+		numwords_a => 256,
+		numwords_b => 256,
 		operation_mode => "DUAL_PORT",
 		outdata_aclr_b => "NONE",
 		outdata_reg_b => "UNREGISTERED",
 		power_up_uninitialized => "FALSE",
 		ram_block_type => "M10K",
 		read_during_write_mode_mixed_ports => "DONT_CARE",
-		widthad_a => 6,
-		widthad_b => 6,
+		widthad_a => 8,
+		widthad_b => 8,
 		width_a => 8,
 		width_b => 8,
 		width_byteena_a => 1
@@ -130,9 +130,9 @@ END SYN;
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
--- Retrieval info: PRIVATE: MEMSIZE NUMERIC "512"
+-- Retrieval info: PRIVATE: MEMSIZE NUMERIC "2048"
 -- Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
--- Retrieval info: PRIVATE: MIFfilename STRING "ram8x8.mif"
+-- Retrieval info: PRIVATE: MIFfilename STRING "ram256X8.mif"
 -- Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "2"
 -- Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
 -- Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "0"
@@ -165,37 +165,37 @@ END SYN;
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_B STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_B STRING "BYPASS"
--- Retrieval info: CONSTANT: INIT_FILE STRING "ram8x8.mif"
+-- Retrieval info: CONSTANT: INIT_FILE STRING "ram256X8.mif"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone V"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
--- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "64"
--- Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "64"
+-- Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "256"
+-- Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "256"
 -- Retrieval info: CONSTANT: OPERATION_MODE STRING "DUAL_PORT"
 -- Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
 -- Retrieval info: CONSTANT: OUTDATA_REG_B STRING "UNREGISTERED"
 -- Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
 -- Retrieval info: CONSTANT: RAM_BLOCK_TYPE STRING "M10K"
 -- Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
--- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "6"
--- Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "6"
+-- Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "8"
+-- Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "8"
 -- Retrieval info: CONSTANT: WIDTH_A NUMERIC "8"
 -- Retrieval info: CONSTANT: WIDTH_B NUMERIC "8"
 -- Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 -- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL "data[7..0]"
 -- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL "q[7..0]"
--- Retrieval info: USED_PORT: rdaddress 0 0 6 0 INPUT NODEFVAL "rdaddress[5..0]"
--- Retrieval info: USED_PORT: wraddress 0 0 6 0 INPUT NODEFVAL "wraddress[5..0]"
+-- Retrieval info: USED_PORT: rdaddress 0 0 8 0 INPUT NODEFVAL "rdaddress[7..0]"
+-- Retrieval info: USED_PORT: wraddress 0 0 8 0 INPUT NODEFVAL "wraddress[7..0]"
 -- Retrieval info: USED_PORT: wren 0 0 0 0 INPUT GND "wren"
--- Retrieval info: CONNECT: @address_a 0 0 6 0 wraddress 0 0 6 0
--- Retrieval info: CONNECT: @address_b 0 0 6 0 rdaddress 0 0 6 0
+-- Retrieval info: CONNECT: @address_a 0 0 8 0 wraddress 0 0 8 0
+-- Retrieval info: CONNECT: @address_b 0 0 8 0 rdaddress 0 0 8 0
 -- Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: @data_a 0 0 8 0 data 0 0 8 0
 -- Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 8 0 @q_b 0 0 8 0
--- Retrieval info: GEN_FILE: TYPE_NORMAL ram8x8.vhd TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL ram8x8.inc FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL ram8x8.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL ram8x8.bsf FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL ram8x8_inst.vhd FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL ram256x8.vhd TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL ram256x8.inc FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL ram256x8.cmp TRUE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL ram256x8.bsf FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL ram256x8_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: altera_mf
