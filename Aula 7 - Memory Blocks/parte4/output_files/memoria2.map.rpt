@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memoria2
-Thu Oct  3 22:32:55 2024
+Thu Nov  7 14:18:31 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -10,17 +10,7 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. General Register Statistics
- 10. Source assignments for parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated
- 11. Parameter Settings for User Entity Instance: parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component
- 12. altsyncram Parameter Settings by Entity Instance
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -44,27 +34,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct  3 22:32:55 2024          ;
-; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
-; Revision Name                   ; memoria2                                       ;
-; Top-level Entity Name           ; memoria2                                       ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 37                                             ;
-; Total pins                      ; 54                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 128                                            ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Nov  7 14:18:31 2024              ;
+; Quartus Prime Version       ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
+; Revision Name               ; memoria2                                       ;
+; Top-level Entity Name       ; memoria2                                       ;
+; Family                      ; Cyclone V                                      ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -163,232 +148,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
-; memoria2.bdf                     ; yes             ; User Block Diagram/Schematic File        ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/memoria2.bdf               ;         ;
-; aula04.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/aula04.bdf                 ;         ;
-; parte04.vhd                      ; yes             ; Auto-Found VHDL File                     ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/parte04.vhd                ;         ;
-; ram32x42.vhd                     ; yes             ; Auto-Found Wizard-Generated File         ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd               ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal231.inc                   ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                             ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_9i04.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/db/altsyncram_9i04.tdf     ;         ;
-; ram32x4.mif                      ; yes             ; Auto-Found Memory Initialization File    ; C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x4.mif                ;         ;
-+----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 40          ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 72          ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 7           ;
-;     -- 5 input functions                    ; 1           ;
-;     -- 4 input functions                    ; 29          ;
-;     -- <=3 input functions                  ; 35          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 37          ;
-;                                             ;             ;
-; I/O pins                                    ; 54          ;
-; Total MLAB memory bits                      ; 0           ;
-; Total block memory bits                     ; 128         ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 41          ;
-; Total fan-out                               ; 518         ;
-; Average fan-out                             ; 2.34        ;
-+---------------------------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                             ; Entity Name     ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |memoria2                                    ; 72 (0)              ; 37 (0)                    ; 128               ; 0          ; 54   ; 0            ; |memoria2                                                                                                       ; memoria2        ; work         ;
-;    |aula04:inst3|                            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memoria2|aula04:inst3                                                                                          ; aula04          ; work         ;
-;    |aula04:inst6|                            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memoria2|aula04:inst6                                                                                          ; aula04          ; work         ;
-;    |aula04:inst75|                           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memoria2|aula04:inst75                                                                                         ; aula04          ; work         ;
-;    |aula04:inst|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memoria2|aula04:inst                                                                                           ; aula04          ; work         ;
-;    |parte04:inst1243|                        ; 44 (44)             ; 37 (37)                   ; 128               ; 0          ; 0    ; 0            ; |memoria2|parte04:inst1243                                                                                      ; parte04         ; work         ;
-;       |ram32x42:ram_instance|                ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |memoria2|parte04:inst1243|ram32x42:ram_instance                                                                ; ram32x42        ; work         ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |memoria2|parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;             |altsyncram_9i04:auto_generated| ; 0 (0)               ; 0 (0)                     ; 128               ; 0          ; 0    ; 0            ; |memoria2|parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated ; altsyncram_9i04 ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                  ;
-+------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+-------------+
-; Name                                                                                                             ; Type       ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF         ;
-+------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+-------------+
-; parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated|ALTSYNCRAM ; M10K block ; Simple Dual Port ; 32           ; 4            ; 32           ; 4            ; 128  ; ram32x4.mif ;
-+------------------------------------------------------------------------------------------------------------------+------------+------------------+--------------+--------------+--------------+--------------+------+-------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 37    ;
-; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 37    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                             ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                              ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+---------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                    ;
-+------------------------------------+----------------------+---------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                 ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                              ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                            ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                            ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                          ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                 ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                 ;
-; WIDTH_A                            ; 4                    ; Signed Integer                                          ;
-; WIDTHAD_A                          ; 5                    ; Signed Integer                                          ;
-; NUMWORDS_A                         ; 32                   ; Signed Integer                                          ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                 ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                 ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                 ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                 ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
-; WIDTH_B                            ; 4                    ; Signed Integer                                          ;
-; WIDTHAD_B                          ; 5                    ; Signed Integer                                          ;
-; NUMWORDS_B                         ; 32                   ; Signed Integer                                          ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                 ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                 ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                 ;
-; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                 ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                 ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                 ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                 ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                 ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                          ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                          ;
-; RAM_BLOCK_TYPE                     ; M10K                 ; Untyped                                                 ;
-; BYTE_SIZE                          ; 8                    ; Signed Integer                                          ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                 ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
-; INIT_FILE                          ; ram32x4.mif          ; Untyped                                                 ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                 ;
-; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                                          ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                 ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                 ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                 ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                 ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                                 ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                 ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                                          ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                 ;
-; CBXI_PARAMETER                     ; altsyncram_9i04      ; Untyped                                                 ;
-+------------------------------------+----------------------+---------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                   ;
-+-------------------------------------------+------------------------------------------------------------------------+
-; Name                                      ; Value                                                                  ;
-+-------------------------------------------+------------------------------------------------------------------------+
-; Number of entity instances                ; 1                                                                      ;
-; Entity Instance                           ; parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                                              ;
-;     -- WIDTH_A                            ; 4                                                                      ;
-;     -- NUMWORDS_A                         ; 32                                                                     ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                           ;
-;     -- WIDTH_B                            ; 4                                                                      ;
-;     -- NUMWORDS_B                         ; 32                                                                     ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                                                 ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                           ;
-;     -- RAM_BLOCK_TYPE                     ; M10K                                                                   ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                              ;
-+-------------------------------------------+------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 37                          ;
-;     CLR               ; 5                           ;
-;     CLR SCLR          ; 32                          ;
-; arriav_lcell_comb     ; 102                         ;
-;     arith             ; 32                          ;
-;         1 data inputs ; 32                          ;
-;     normal            ; 70                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 28                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 29                          ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 7                           ;
-; boundary_port         ; 54                          ;
-; stratixv_ram_block    ; 4                           ;
-;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.65                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -397,7 +161,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Thu Oct  3 22:32:38 2024
+    Info: Processing started: Thu Nov  7 14:18:23 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memoria2 -c memoria2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -423,88 +187,13 @@ Warning (275011): Block or symbol "NOT" of instance "inst71" overlaps another bl
 Warning (275011): Block or symbol "NOT" of instance "inst76" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst78" overlaps another block or symbol
 Warning (12125): Using design file parte04.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: parte04-behavior File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 18
-    Info (12023): Found entity 1: parte04 File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 5
-Info (12128): Elaborating entity "parte04" for hierarchy "parte04:inst1243"
-Warning (12125): Using design file ram32x42.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ram32x42-SYN File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd Line: 56
-    Info (12023): Found entity 1: ram32x42 File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd Line: 43
-Info (12128): Elaborating entity "ram32x42" for hierarchy "parte04:inst1243|ram32x42:ram_instance" File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 42
-Info (12128): Elaborating entity "altsyncram" for hierarchy "parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component" File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component" File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd Line: 63
-Info (12133): Instantiated megafunction "parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/ram32x42.vhd Line: 63
-    Info (12134): Parameter "address_aclr_a" = "UNUSED"
-    Info (12134): Parameter "address_aclr_b" = "NONE"
-    Info (12134): Parameter "address_reg_b" = "CLOCK0"
-    Info (12134): Parameter "byte_size" = "8"
-    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
-    Info (12134): Parameter "byteena_aclr_b" = "NONE"
-    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
-    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
-    Info (12134): Parameter "intended_device_family" = "Cyclone V"
-    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
-    Info (12134): Parameter "enable_ecc" = "FALSE"
-    Info (12134): Parameter "implement_in_les" = "OFF"
-    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
-    Info (12134): Parameter "indata_aclr_b" = "NONE"
-    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "ram32x4.mif"
-    Info (12134): Parameter "init_file_layout" = "PORT_A"
-    Info (12134): Parameter "maximum_depth" = "0"
-    Info (12134): Parameter "numwords_a" = "32"
-    Info (12134): Parameter "numwords_b" = "32"
-    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "ram_block_type" = "M10K"
-    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
-    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
-    Info (12134): Parameter "width_a" = "4"
-    Info (12134): Parameter "width_b" = "4"
-    Info (12134): Parameter "width_byteena_a" = "1"
-    Info (12134): Parameter "width_byteena_b" = "1"
-    Info (12134): Parameter "width_eccstatus" = "3"
-    Info (12134): Parameter "widthad_a" = "5"
-    Info (12134): Parameter "widthad_b" = "5"
-    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
-    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-    Info (12134): Parameter "lpm_hint" = "UNUSED"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9i04.tdf
-    Info (12023): Found entity 1: altsyncram_9i04 File: C:/Users/maico/Desktop/Aula 7 - Memory Blocks/parte4/db/altsyncram_9i04.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_9i04" for hierarchy "parte04:inst1243|ram32x42:ram_instance|altsyncram:altsyncram_component|altsyncram_9i04:auto_generated" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "h1" is stuck at GND
-    Warning (13410): Pin "h2" is stuck at GND
-    Warning (13410): Pin "h6" is stuck at VCC
-    Warning (13410): Pin "y1" is stuck at GND
-    Warning (13410): Pin "y2" is stuck at GND
-    Warning (13410): Pin "y6" is stuck at VCC
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 130 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 72 logic cells
-    Info (21064): Implemented 4 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4911 megabytes
-    Info: Processing ended: Thu Oct  3 22:32:55 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:10
+    Info (12022): Found design unit 1: parte04-behavior File: C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 18
+    Info (12023): Found entity 1: parte04 File: C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 5
+Error (10482): VHDL error at parte04.vhd(57): object "STATES" is used but not declared File: C:/Users/maico/Desktop/4Semestre/GitHub/SSC0108-Pratica-em-Sistemas-Digitais-2024/Aula 7 - Memory Blocks/parte4/parte04.vhd Line: 57
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 18 warnings
+    Error: Peak virtual memory: 4845 megabytes
+    Error: Processing ended: Thu Nov  7 14:18:31 2024
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:09
 
 

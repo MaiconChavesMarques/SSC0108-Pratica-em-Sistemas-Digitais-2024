@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saidaREAL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaREAL[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaRR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				},
+				{
+					"name" : "maior",
+					"strict" : false
+				},
+				{
+					"name" : "over",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[0]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[3]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[4]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[5]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[6]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[7]",
+					"strict" : false
+				},
+				{
+					"name" : "wait2",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

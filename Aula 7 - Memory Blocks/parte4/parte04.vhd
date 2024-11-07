@@ -53,6 +53,9 @@ begin
 
     -- Processo que percorre os endereços de exibição e exibe por 1 segundo cada
     process(clock, reset)
+	 
+	 variable state : STATES;
+	 
     begin
         if reset = '0' then
             -- Resetar o contador e o endereço a ser exibido
