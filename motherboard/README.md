@@ -1,0 +1,5 @@
+# SSC0108-Pratica-em-Sistemas-Digitais-2024
+
+OLHE AS INSTRUÇÕES DO PROCESSADOR NO ARQUIVO .XLSX QUE ESTA AQUI
+
+<h2>Membros:</h2>
