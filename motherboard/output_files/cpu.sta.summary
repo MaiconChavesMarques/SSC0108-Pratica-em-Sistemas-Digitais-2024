@@ -3,339 +3,339 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'INIT_ULA'
-Slack : -10.995
-TNS   : -156.913
+Slack : -11.094
+TNS   : -156.818
 
 Type  : Slow 1100mV 85C Model Setup 'state.fetch2_7152'
-Slack : -10.118
-TNS   : -181.567
+Slack : -10.985
+TNS   : -184.900
 
 Type  : Slow 1100mV 85C Model Setup 'IR[0]'
-Slack : -9.613
-TNS   : -449.734
+Slack : -9.770
+TNS   : -437.976
 
 Type  : Slow 1100mV 85C Model Setup 'reset'
-Slack : -9.487
-TNS   : -172.370
+Slack : -9.180
+TNS   : -174.446
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -4.978
-TNS   : -76.583
+Slack : -4.759
+TNS   : -46.530
 
 Type  : Slow 1100mV 85C Model Hold 'reset'
-Slack : -4.933
-TNS   : -42.843
+Slack : -4.083
+TNS   : -52.154
 
 Type  : Slow 1100mV 85C Model Hold 'IR[0]'
-Slack : -2.927
-TNS   : -51.753
-
-Type  : Slow 1100mV 85C Model Hold 'state.fetch2_7152'
-Slack : -1.143
-TNS   : -1.917
+Slack : -2.304
+TNS   : -39.128
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : -0.736
-TNS   : -1.243
+Slack : -0.735
+TNS   : -8.069
 
 Type  : Slow 1100mV 85C Model Hold 'INIT_ULA'
-Slack : -0.405
-TNS   : -1.179
+Slack : 0.143
+TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'state.fetch2_7152'
-Slack : -5.125
-TNS   : -58.811
-
-Type  : Slow 1100mV 85C Model Recovery 'IR[0]'
-Slack : -3.918
-TNS   : -72.283
+Type  : Slow 1100mV 85C Model Hold 'state.fetch2_7152'
+Slack : 0.235
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'INIT_ULA'
-Slack : -3.264
-TNS   : -18.326
+Slack : -3.631
+TNS   : -19.512
+
+Type  : Slow 1100mV 85C Model Recovery 'state.fetch2_7152'
+Slack : -3.629
+TNS   : -61.973
+
+Type  : Slow 1100mV 85C Model Recovery 'IR[0]'
+Slack : -2.992
+TNS   : -78.051
 
 Type  : Slow 1100mV 85C Model Removal 'IR[0]'
-Slack : -3.029
-TNS   : -72.460
+Slack : -1.451
+TNS   : -41.582
 
 Type  : Slow 1100mV 85C Model Removal 'state.fetch2_7152'
-Slack : -1.245
-TNS   : -2.162
+Slack : 0.555
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'INIT_ULA'
-Slack : -0.232
-TNS   : -0.232
+Slack : 0.816
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -2.636
 TNS   : -107.342
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'IR[0]'
-Slack : -2.359
-TNS   : -135.607
-
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'reset'
-Slack : -1.785
-TNS   : -22.538
+Slack : -1.727
+TNS   : -32.072
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'IR[0]'
+Slack : -1.257
+TNS   : -102.407
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'INIT_ULA'
-Slack : -0.169
-TNS   : -0.907
+Slack : -0.098
+TNS   : -0.098
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'state.fetch2_7152'
-Slack : 0.045
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'INIT_ULA'
-Slack : -10.994
-TNS   : -157.681
+Slack : -11.146
+TNS   : -157.725
 
 Type  : Slow 1100mV 0C Model Setup 'state.fetch2_7152'
-Slack : -10.211
-TNS   : -185.057
+Slack : -10.956
+TNS   : -185.396
 
 Type  : Slow 1100mV 0C Model Setup 'IR[0]'
-Slack : -9.587
-TNS   : -451.741
+Slack : -9.755
+TNS   : -436.308
 
 Type  : Slow 1100mV 0C Model Setup 'reset'
-Slack : -9.443
-TNS   : -170.732
+Slack : -8.953
+TNS   : -171.195
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -4.555
-TNS   : -67.983
+Slack : -4.366
+TNS   : -40.697
 
 Type  : Slow 1100mV 0C Model Hold 'reset'
-Slack : -4.964
-TNS   : -45.238
+Slack : -4.236
+TNS   : -54.450
 
 Type  : Slow 1100mV 0C Model Hold 'IR[0]'
-Slack : -2.973
-TNS   : -50.306
-
-Type  : Slow 1100mV 0C Model Hold 'state.fetch2_7152'
-Slack : -1.200
-TNS   : -1.798
+Slack : -2.421
+TNS   : -41.596
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : -0.850
-TNS   : -2.803
+Slack : -0.976
+TNS   : -12.423
 
 Type  : Slow 1100mV 0C Model Hold 'INIT_ULA'
-Slack : -0.445
-TNS   : -1.343
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'state.fetch2_7152'
+Slack : 0.069
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'state.fetch2_7152'
-Slack : -5.091
-TNS   : -61.350
-
-Type  : Slow 1100mV 0C Model Recovery 'IR[0]'
-Slack : -3.941
-TNS   : -78.369
+Slack : -3.713
+TNS   : -63.385
 
 Type  : Slow 1100mV 0C Model Recovery 'INIT_ULA'
-Slack : -3.155
-TNS   : -18.577
+Slack : -3.698
+TNS   : -20.448
+
+Type  : Slow 1100mV 0C Model Recovery 'IR[0]'
+Slack : -2.978
+TNS   : -82.271
 
 Type  : Slow 1100mV 0C Model Removal 'IR[0]'
-Slack : -2.944
-TNS   : -66.373
+Slack : -1.419
+TNS   : -39.708
 
 Type  : Slow 1100mV 0C Model Removal 'state.fetch2_7152'
-Slack : -1.171
-TNS   : -1.783
+Slack : 0.561
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'INIT_ULA'
-Slack : -0.255
-TNS   : -0.255
+Slack : 0.866
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -2.636
 TNS   : -107.374
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'IR[0]'
-Slack : -2.360
-TNS   : -130.098
-
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'reset'
-Slack : -1.896
-TNS   : -23.986
+Slack : -1.702
+TNS   : -32.613
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'IR[0]'
+Slack : -1.207
+TNS   : -110.581
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'INIT_ULA'
-Slack : -0.176
-TNS   : -0.943
+Slack : -0.035
+TNS   : -0.035
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'state.fetch2_7152'
-Slack : -0.019
-TNS   : -0.019
+Slack : 0.168
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'INIT_ULA'
-Slack : -4.979
-TNS   : -70.459
-
-Type  : Fast 1100mV 85C Model Setup 'IR[0]'
-Slack : -4.739
-TNS   : -205.436
+Slack : -5.142
+TNS   : -72.030
 
 Type  : Fast 1100mV 85C Model Setup 'state.fetch2_7152'
-Slack : -4.495
-TNS   : -83.612
+Slack : -5.133
+TNS   : -85.470
+
+Type  : Fast 1100mV 85C Model Setup 'IR[0]'
+Slack : -4.672
+TNS   : -199.277
 
 Type  : Fast 1100mV 85C Model Setup 'reset'
-Slack : -4.454
-TNS   : -84.967
+Slack : -4.237
+TNS   : -83.511
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -2.645
-TNS   : -33.962
+Slack : -2.706
+TNS   : -19.322
 
 Type  : Fast 1100mV 85C Model Hold 'reset'
-Slack : -2.354
-TNS   : -17.381
+Slack : -1.947
+TNS   : -22.303
 
 Type  : Fast 1100mV 85C Model Hold 'IR[0]'
-Slack : -1.628
-TNS   : -31.186
-
-Type  : Fast 1100mV 85C Model Hold 'state.fetch2_7152'
-Slack : -0.648
-TNS   : -1.379
-
-Type  : Fast 1100mV 85C Model Hold 'INIT_ULA'
-Slack : -0.455
-TNS   : -1.665
+Slack : -1.195
+TNS   : -19.373
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : -0.195
-TNS   : -0.415
+Slack : -0.507
+TNS   : -6.545
 
-Type  : Fast 1100mV 85C Model Recovery 'state.fetch2_7152'
-Slack : -2.260
-TNS   : -18.434
+Type  : Fast 1100mV 85C Model Hold 'INIT_ULA'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'state.fetch2_7152'
+Slack : 0.211
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'IR[0]'
-Slack : -2.109
-TNS   : -27.641
+Slack : -1.511
+TNS   : -30.629
 
 Type  : Fast 1100mV 85C Model Recovery 'INIT_ULA'
-Slack : -1.604
-TNS   : -5.849
+Slack : -1.490
+TNS   : -6.113
+
+Type  : Fast 1100mV 85C Model Recovery 'state.fetch2_7152'
+Slack : -1.481
+TNS   : -19.384
 
 Type  : Fast 1100mV 85C Model Removal 'IR[0]'
-Slack : -1.863
-TNS   : -39.589
+Slack : -0.641
+TNS   : -18.573
 
 Type  : Fast 1100mV 85C Model Removal 'state.fetch2_7152'
-Slack : -0.534
-TNS   : -0.934
+Slack : 0.425
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'INIT_ULA'
-Slack : 0.050
+Slack : 0.627
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -2.174
 TNS   : -86.411
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'IR[0]'
-Slack : -1.229
-TNS   : -45.030
-
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'reset'
-Slack : -0.876
-TNS   : -7.150
+Slack : -0.978
+TNS   : -13.176
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'IR[0]'
+Slack : -0.546
+TNS   : -13.244
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'INIT_ULA'
-Slack : -0.033
-TNS   : -0.090
+Slack : 0.076
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'state.fetch2_7152'
-Slack : 0.095
+Slack : 0.238
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'INIT_ULA'
-Slack : -4.563
-TNS   : -65.163
+Slack : -4.763
+TNS   : -66.911
 
 Type  : Fast 1100mV 0C Model Setup 'state.fetch2_7152'
-Slack : -4.219
-TNS   : -79.835
+Slack : -4.734
+TNS   : -80.790
 
 Type  : Fast 1100mV 0C Model Setup 'IR[0]'
-Slack : -4.204
-TNS   : -188.030
+Slack : -4.300
+TNS   : -184.610
 
 Type  : Fast 1100mV 0C Model Setup 'reset'
-Slack : -3.848
-TNS   : -72.443
+Slack : -3.709
+TNS   : -71.222
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -1.997
-TNS   : -23.164
+Slack : -2.125
+TNS   : -14.869
 
 Type  : Fast 1100mV 0C Model Hold 'reset'
-Slack : -2.230
-TNS   : -17.545
+Slack : -1.902
+TNS   : -22.969
 
 Type  : Fast 1100mV 0C Model Hold 'IR[0]'
-Slack : -1.459
-TNS   : -26.302
-
-Type  : Fast 1100mV 0C Model Hold 'state.fetch2_7152'
-Slack : -0.593
-TNS   : -1.171
-
-Type  : Fast 1100mV 0C Model Hold 'INIT_ULA'
-Slack : -0.360
-TNS   : -1.311
+Slack : -1.064
+TNS   : -17.462
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : -0.294
-TNS   : -1.664
+Slack : -0.637
+TNS   : -9.035
 
-Type  : Fast 1100mV 0C Model Recovery 'state.fetch2_7152'
-Slack : -2.068
-TNS   : -18.112
+Type  : Fast 1100mV 0C Model Hold 'INIT_ULA'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'state.fetch2_7152'
+Slack : 0.177
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'IR[0]'
-Slack : -1.997
-TNS   : -28.613
+Slack : -1.464
+TNS   : -32.468
 
 Type  : Fast 1100mV 0C Model Recovery 'INIT_ULA'
-Slack : -1.448
-TNS   : -5.694
+Slack : -1.412
+TNS   : -6.333
+
+Type  : Fast 1100mV 0C Model Recovery 'state.fetch2_7152'
+Slack : -1.383
+TNS   : -19.669
 
 Type  : Fast 1100mV 0C Model Removal 'IR[0]'
-Slack : -1.523
-TNS   : -29.691
+Slack : -0.493
+TNS   : -12.082
 
 Type  : Fast 1100mV 0C Model Removal 'state.fetch2_7152'
-Slack : -0.337
-TNS   : -0.396
+Slack : 0.533
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'INIT_ULA'
-Slack : 0.173
+Slack : 0.744
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -2.174
 TNS   : -86.404
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'IR[0]'
-Slack : -0.994
-TNS   : -29.281
-
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'reset'
-Slack : -0.825
-TNS   : -6.645
+Slack : -0.864
+TNS   : -11.362
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'IR[0]'
+Slack : -0.394
+TNS   : -7.904
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'INIT_ULA'
-Slack : 0.061
+Slack : 0.160
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'state.fetch2_7152'
-Slack : 0.169
+Slack : 0.271
 TNS   : 0.000
 
 ------------------------------------------------------------

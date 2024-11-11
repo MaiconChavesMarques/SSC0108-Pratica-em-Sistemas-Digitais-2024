@@ -5,7 +5,8 @@ USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity cpu is
-	port( clk			: in	std_LOGIC;
+	port( 
+			clk			: in	std_LOGIC;
 			reset			: in	std_LOGIC;
 			wait2			: in	std_LOGIC;
 			entrada     : in  std_logic_vector(7 downto 0);
@@ -14,6 +15,11 @@ entity cpu is
 			saidaA      : out std_logic_vector(7 downto 0);
 			zero			: out	std_LOGIC;
 			maior			: out	std_LOGIC;
+			LED1			: out	std_LOGIC := '0';
+			LED2			: out	std_LOGIC := '0';
+			LED3			: out	std_LOGIC := '0';
+			LED4			: out	std_LOGIC := '0';
+			LED5			: out	std_LOGIC := '0';
 			over			: out	std_LOGIC
 		);
 end cpu;
@@ -112,11 +118,18 @@ ELSE
 		END IF;	
 			
 		case state is
+		
 --************************************************************************
 -- FETCH STATE
 --************************************************************************		
 		
 		when fetch =>
+		
+		LED1	<= '1';
+		LED2	<= '0';
+		LED3	<= '0';
+		LED4	<= '0';
+		LED5	<= '0';
 		
 			-- Inicio das acoes do ciclo de Busca !!       
 			raddress <= PC;
@@ -129,6 +142,12 @@ ELSE
 --************************************************************************		
 		
 		when fetch2 =>
+		
+		LED1	<= '0';
+		LED2	<= '1';
+		LED3	<= '0';
+		LED4	<= '0';
+		LED5	<= '0';
 		
 			-- Inicio das acoes do ciclo de Busca !!       
 			IR <= data_out;
@@ -143,6 +162,12 @@ ELSE
 -- DECODE STATE
 --************************************************************************
 		when decode =>
+		
+		LED1	<= '0';
+		LED2	<= '0';
+		LED3	<= '1';
+		LED4	<= '0';
+		LED5	<= '0';
 
 --========================================================================
 -- ADD ou SUB ou AND ou OR ou CMP
@@ -456,6 +481,12 @@ ELSE
 --************************************************************************								
 					
 			when exec =>
+			
+			LED1	<= '0';
+			LED2	<= '0';
+			LED3	<= '0';
+			LED4	<= '1';
+			LED5	<= '0';
 
 --========================================================================
 -- EXEC ADD ou SUB ou AND ou OR ou CMP
@@ -602,7 +633,14 @@ ELSE
 -- EXECUTE2 STATE
 --************************************************************************								
 					
-			when exec2 =>			
+			when exec2 =>
+	
+			LED1	<= '0';
+			LED2	<= '0';
+			LED3	<= '0';
+			LED4	<= '0';
+			LED5	<= '1';
+			
 --========================================================================
 -- LOAD
 --========================================================================            
@@ -730,12 +768,12 @@ END PROCESS;
 					end if;
 					
 				END IF;
-					saidaRR <= RESULT;
+					--saidaRR <= RESULT;
 			ELSE
-					saidaRR <= RR;
+					--saidaRR <= RR;
 			END IF;
 END PROCESS;
-
+	saidaRR <= RR;
 	saidaA <= RA;
 	zero <= FRzero;
 	maior <= FRmaior;

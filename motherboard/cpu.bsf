@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 240 160)
+	(rect 16 16 240 256)
 	(text "cpu" (rect 5 0 19 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -90,11 +90,46 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 224 112)
 		(output)
-		(text "over" (rect 0 0 18 12)(font "Arial" ))
-		(text "over" (rect 185 107 203 119)(font "Arial" ))
+		(text "LED1" (rect 0 0 23 12)(font "Arial" ))
+		(text "LED1" (rect 180 107 203 119)(font "Arial" ))
 		(line (pt 224 112)(pt 208 112)(line_width 1))
 	)
+	(port
+		(pt 224 128)
+		(output)
+		(text "LED2" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED2" (rect 179 123 203 135)(font "Arial" ))
+		(line (pt 224 128)(pt 208 128)(line_width 1))
+	)
+	(port
+		(pt 224 144)
+		(output)
+		(text "LED3" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED3" (rect 179 139 203 151)(font "Arial" ))
+		(line (pt 224 144)(pt 208 144)(line_width 1))
+	)
+	(port
+		(pt 224 160)
+		(output)
+		(text "LED4" (rect 0 0 25 12)(font "Arial" ))
+		(text "LED4" (rect 178 155 203 167)(font "Arial" ))
+		(line (pt 224 160)(pt 208 160)(line_width 1))
+	)
+	(port
+		(pt 224 176)
+		(output)
+		(text "LED5" (rect 0 0 24 12)(font "Arial" ))
+		(text "LED5" (rect 179 171 203 183)(font "Arial" ))
+		(line (pt 224 176)(pt 208 176)(line_width 1))
+	)
+	(port
+		(pt 224 192)
+		(output)
+		(text "over" (rect 0 0 18 12)(font "Arial" ))
+		(text "over" (rect 185 187 203 199)(font "Arial" ))
+		(line (pt 224 192)(pt 208 192)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 208 128)(line_width 1))
+		(rectangle (rect 16 16 208 224)(line_width 1))
 	)
 )
