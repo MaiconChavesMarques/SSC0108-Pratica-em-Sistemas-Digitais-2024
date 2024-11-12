@@ -7,3 +7,5 @@ Estender o conhecimento do aluno com práticas em técnicas digitais, com ênfas
 <li> Maicon Chaves Marques - https://github.com/MaiconChavesMarques </li>
 
 <li> Pedro Calciolari Jardim - https://github.com/Pedro-C-Jardim </li>
+
+<li> João Vitor Pereira Candido - https://github.com/JV-PC </li>
