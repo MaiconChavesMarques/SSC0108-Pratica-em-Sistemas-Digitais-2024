@@ -204,11 +204,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "menor",
+					"strict" : false
+				},
+				{
 					"name" : "e3",
 					"strict" : false
 				},
 				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "e2",
 					"strict" : false
 				},
 				{
@@ -220,11 +232,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "e2",
+					"name" : "e7",
 					"strict" : false
 				},
 				{
-					"name" : "e7",
+					"name" : "e6",
 					"strict" : false
 				},
 				{
@@ -233,14 +245,6 @@
 				},
 				{
 					"name" : "e4",
-					"strict" : false
-				},
-				{
-					"name" : "e6",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
 					"strict" : false
 				},
 				{

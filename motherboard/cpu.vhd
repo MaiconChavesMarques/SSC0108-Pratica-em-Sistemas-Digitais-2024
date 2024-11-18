@@ -10,11 +10,12 @@ entity cpu is
 			reset			: in	std_LOGIC;
 			wait2			: in	std_LOGIC;
 			entrada     : in  std_logic_vector(7 downto 0);
-			saidaREAL   : out std_logic_vector(7 downto 0) := (others => '0');
+			saidaREAL   : out std_logic_vector(7 downto 0);
 			saidaRR     : out std_logic_vector(7 downto 0);
 			saidaA      : out std_logic_vector(7 downto 0);
 			zero			: out	std_LOGIC;
 			maior			: out	std_LOGIC;
+			menor			: out	std_LOGIC;
 			LED1			: out	std_LOGIC := '0';
 			LED2			: out	std_LOGIC := '0';
 			LED3			: out	std_LOGIC := '0';
@@ -59,6 +60,7 @@ ARCHITECTURE main of cpu is
 	signal INIT_ULA : STD_LOGIC := '0';
 	signal FRzero   : STD_LOGIC := '0';
 	signal FRmaior  : STD_LOGIC := '0';
+	signal FRmenor  : STD_LOGIC := '0';
 	signal FRover   : STD_LOGIC := '0';
 	                  
 	signal data_in    : std_logic_vector(7 downto 0) := (others => '0');
@@ -82,7 +84,7 @@ ARCHITECTURE main of cpu is
 begin
 	    ram_instance: ram256x8
         port map (
-            clock     => clk,
+            clock     => (NOT clk),
             data      => data_in,      
             rdaddress => raddress,     
             wraddress => waddress,     
@@ -104,13 +106,20 @@ IF(reset = '1') THEN
 	RR <= (others => '0');
 	PC <= (others => '0');
 	IR <= (others => '0');
+	saidaREAL <= (others => '0');
 
 	data_in  <= (others => '0');
-	raddress <= (others => '0');
 	waddress <= (others => '0');
-	write1   <= '0';  
+	write1   <= '0';
+	state := fetch;
+	
+	LED1	<= '0';
+	LED2	<= '0';
+	LED3	<= '0';
+	LED4	<= '0';
+	LED5	<= '0';
 
-ELSE
+ELSIF(rising_edge(clk)) THEN
 		
 		IF(INIT_ULA = '1') THEN --Controle das saidas da ULA
 			RR <= RESULT;
@@ -151,6 +160,8 @@ ELSE
 		
 			-- Inicio das acoes do ciclo de Busca !!       
 			IR <= data_out;
+			--saidaA <= data_out;
+			saidaREAL <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 			PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 
 			STATE := decode;
@@ -185,7 +196,7 @@ ELSE
 					  INIT_ULA <= '1';
 				 ELSIF(IR(3 DOWNTO 0) = "0011") THEN  -- A i
 					  X <= RA;
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 				 ELSIF(IR(3 DOWNTO 0) = "0010") THEN  -- A R
 					  X <= RA;
 					  Y <= RR;
@@ -200,19 +211,19 @@ ELSE
 					  INIT_ULA <= '1';
 				 ELSIF(IR(3 DOWNTO 0) = "0111") THEN  -- B i
 					  X <= RB;
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 				 ELSIF(IR(3 DOWNTO 0) = "0110") THEN  -- B R
 					  X <= RB;
 					  Y <= RR;
 					  INIT_ULA <= '1';
 				 ELSIF(IR(3 DOWNTO 0) = "1100") THEN  -- i A
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 					  Y <= RA;
 				 ELSIF(IR(3 DOWNTO 0) = "1101") THEN  -- i B
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 					  Y <= RB;
 				 ELSIF(IR(3 DOWNTO 0) = "1110") THEN  -- i R
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 					  Y <= RR;
 				 ELSIF(IR(3 DOWNTO 0) = "1000") THEN  -- R A
 					  X <= RR;
@@ -224,7 +235,7 @@ ELSE
 					  INIT_ULA <= '1';
 				 ELSIF(IR(3 DOWNTO 0) = "1011") THEN  -- R i
 					  X <= RR;
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 				 ELSIF(IR(3 DOWNTO 0) = "1010") THEN  -- R R
 					  X <= RR;
 					  Y <= RR;
@@ -239,20 +250,25 @@ ELSE
 			IF(IR(7 DOWNTO 4) = NOT1) THEN
 				IF(IR(3 DOWNTO 2) = "00") THEN
 					X <= RA;
+					INIT_ULA <= '1';
 				ELSIF(IR(3 DOWNTO 2) = "01") THEN
 					X <= RB;
+					INIT_ULA <= '1';
 				ELSIF(IR(3 DOWNTO 2) = "10") THEN
 					X <= RR;
+					INIT_ULA <= '1';
+				ELSIF(IR(3 DOWNTO 2) = "11") THEN
+					raddress <= PC;
 				END IF;
-				INIT_ULA <= '1';
-				state := fetch;
+				
+				state := exec;
 			END IF;
 
 --========================================================================
 -- JMP
 --========================================================================		
 			IF(IR(7 DOWNTO 4) = JMP) THEN
-				raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+				raddress <= PC;
 				state := exec;
 			END IF;
 			
@@ -261,7 +277,7 @@ ELSE
 --========================================================================			
 			IF(IR(7 DOWNTO 4) = JEQ) THEN
 				IF(FRzero = '1') THEN
-					raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					raddress <= PC;
 				END IF;
 				state := exec;
 			END IF;
@@ -272,7 +288,7 @@ ELSE
 --========================================================================			
 			IF(IR(7 DOWNTO 4) = JGR) THEN
 				IF(FRzero = '0' and FRmaior ='1') THEN
-					raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					raddress <= PC;
 				END IF;
 				state := exec;
 			END IF;
@@ -289,7 +305,7 @@ ELSE
 					  raddress <= RB;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0011") THEN  -- A i: Carrega para o registrador RA o conteúdo do endereço imediato
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0010") THEN  -- A R: Carrega para o registrador RA o valor do endereço em RR
 					  raddress <= RR;
@@ -301,7 +317,7 @@ ELSE
 					  raddress <= RB;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i: Carrega para o registrador RB o conteúdo do endereço imediato
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0110") THEN  -- B R: Carrega para o registrador RB o valor do endereço em RR
 					  raddress <= RR;
@@ -313,7 +329,7 @@ ELSE
 					  raddress <= RB;
 
 				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i: Carrega para o registrador RR o conteúdo do endereço imediato
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "1010") THEN  -- R R: Carrega para o registrador RR o valor do endereço em RR
 					  raddress <= RR;
@@ -343,7 +359,7 @@ ELSE
 					  write1 <= '1';
 
 				 ELSIF (IR(3 DOWNTO 0) = "0011") THEN  -- A i:
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0100") THEN  -- B A: 
 					  waddress <= RA;
@@ -361,7 +377,7 @@ ELSE
 					  write1 <= '1';
 
 				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i:
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "1000") THEN  -- R A:
 					  waddress <= RA;
@@ -379,7 +395,7 @@ ELSE
 					  write1 <= '1';
 
 				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i:
-					  raddress <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					  raddress <= PC;
 
 				 END IF;
 
@@ -391,7 +407,7 @@ ELSE
 
 --========================================================================
 -- MOV
---========================================================================            
+--========================================================================         
 			IF (IR(7 DOWNTO 4) = MOV) THEN
 
 				 IF (IR(3 DOWNTO 0) = "0001") THEN  -- A B: Move o valor de RB para RA
@@ -400,11 +416,17 @@ ELSE
 				 ELSIF (IR(3 DOWNTO 0) = "0010") THEN  -- A R: Move o valor de RR para RA
 					  RA <= RR;
 
+				 ELSIF (IR(3 DOWNTO 0) = "0011") THEN  -- A i: Move o valor imediato para RA
+					  raddress <= PC;
+
 				 ELSIF (IR(3 DOWNTO 0) = "0100") THEN  -- B A: Move o valor de RA para RB
 					  RB <= RA;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0110") THEN  -- B R: Move o valor de RR para RB
 					  RB <= RR;
+
+				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i: Move o valor imediato para RB
+					  raddress <= PC;
 
 				 ELSIF (IR(3 DOWNTO 0) = "1000") THEN  -- R A: Move o valor de RA para RR
 					  RR <= RA;
@@ -412,8 +434,11 @@ ELSE
 				 ELSIF (IR(3 DOWNTO 0) = "1001") THEN  -- R B: Move o valor de RB para RR
 					  RR <= RB;
 
+				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i: Move o valor imediato para RR
+					  raddress <= PC;
 				 END IF;
-					state := fetch;
+
+				 state := exec;
 			END IF;
 			
 --========================================================================
@@ -496,26 +521,38 @@ ELSE
 
 				 IF (IR(3 DOWNTO 0) = "0011") THEN  -- A i
 					  Y <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i
 					  Y <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 ELSIF (IR(3 DOWNTO 0) = "1100") THEN  -- i A
 					  X <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 ELSIF (IR(3 DOWNTO 0) = "1101") THEN  -- i B
 					  X <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 ELSIF (IR(3 DOWNTO 0) = "1110") THEN  -- i R
 					  Y <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i
 					  Y <= data_out;
+					  --RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  INIT_ULA <= '1';
 					  
 				 END IF;
@@ -524,6 +561,19 @@ ELSE
 
 			END IF;
 
+--========================================================================
+-- NOT
+--========================================================================			
+			IF(IR(7 DOWNTO 4) = NOT1) THEN
+				IF(IR(3 DOWNTO 2) = "11") THEN
+					X <= data_out;
+					PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+					INIT_ULA <= '1';
+				END IF;
+				
+				state := fetch;
+			END IF;
+			
 --========================================================================
 -- JMP
 --========================================================================		
@@ -538,6 +588,8 @@ ELSE
 			IF(IR(7 DOWNTO 4) = JEQ) THEN
 				IF(FRzero = '1') THEN
 					PC <= data_out;
+				ELSE
+					PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 				END IF;
 				state := fetch;
 			END IF;
@@ -548,6 +600,8 @@ ELSE
 			IF(IR(7 DOWNTO 4) = JGR) THEN
 				IF(FRzero = '0' and FRmaior ='1') THEN
 					PC <= data_out;
+				ELSE
+					PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 				END IF;
 				state := fetch;
 			END IF;
@@ -564,7 +618,8 @@ ELSE
 					  RA <= data_out;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0011") THEN  -- A i: Carrega para o registrador RA o valor imediato
-					  RA <= data_out;
+					  raddress <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 
 				 ELSIF (IR(3 DOWNTO 0) = "0010") THEN  -- A R: Carrega para o registrador RA o conteúdo do endereço em RR
 					  RA <= data_out;
@@ -576,7 +631,8 @@ ELSE
 					  RB <= data_out;
 
 				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i: Carrega para o registrador RB o valor imediato
-					  RB <= data_out;
+					  raddress <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 
 				 ELSIF (IR(3 DOWNTO 0) = "0110") THEN  -- B R: Carrega para o registrador RB o conteúdo do endereço em RR
 					  RB <= data_out;
@@ -588,7 +644,8 @@ ELSE
 					  RR <= data_out;
 
 				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i: Carrega para o registrador RR o valor imediato
-					  RR <= data_out;
+					  raddress <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 
 				 ELSIF (IR(3 DOWNTO 0) = "1010") THEN  -- R R: Carrega para o registrador RR o conteúdo do endereço em RR
 					  RR <= data_out;
@@ -606,20 +663,45 @@ ELSE
 				 IF (IR(3 DOWNTO 0) = "0011") THEN  -- A i:
 					  waddress <= data_out;
 					  data_in <= RA;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  write1 <= '1';
 
 				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i:
 					  waddress <= data_out;
 					  data_in <= RB;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  write1 <= '1';
 
 				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i:
 					  waddress <= data_out;
 					  data_in <= RR;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
 					  write1 <= '1';
 
 				 END IF;
 				state := exec2;
+			END IF;
+			
+--========================================================================
+-- MOV
+--========================================================================         
+			IF (IR(7 DOWNTO 4) = MOV) THEN
+
+				 IF (IR(3 DOWNTO 0) = "0011") THEN  -- A i: Move o valor imediato para RA
+					  RA <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+
+				 ELSIF (IR(3 DOWNTO 0) = "0111") THEN  -- B i: Move o valor imediato para RB
+					  RB <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+
+				 ELSIF (IR(3 DOWNTO 0) = "1011") THEN  -- R i: Move o valor imediato para RR
+					  RR <= data_out;
+					  PC <= STD_LOGIC_VECTOR(unsigned(PC) + 1);
+
+				 END IF;
+
+				 state := fetch;
 			END IF;
 			
 -- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -683,14 +765,20 @@ END PROCESS;
 			VARIABLE AUX : STD_LOGIC_VECTOR(7 downto 0);
 			VARIABLE RESULT15 : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
 			VARIABLE SUPERIOR : STD_LOGIC_VECTOR(15 downto 0) := "0000000001111111";
-			VARIABLE INFERIOR : STD_LOGIC_VECTOR(15 downto 0) := "1111111110000000";
+			VARIABLE INFERIOR : STD_LOGIC_VECTOR(15 downto 0) := "1111111100000001";
 			VARIABLE X_SOMA : STD_LOGIC_VECTOR(15 downto 0) := "00000000" & X;
 			VARIABLE Y_SOMA : STD_LOGIC_VECTOR(15 downto 0) := "00000000" & Y;
 			
 		BEGIN
+		
+		IF(reset = '1') THEN
 
-			FRover <= '0';
+			FRover  <= '0';
+			FRzero  <= '0';
+			FRmaior <= '0';
+			FRmenor <= '0';
 
+		END IF;
 --========================================================================
 -- ARITH 
 --========================================================================
@@ -712,19 +800,35 @@ END PROCESS;
 					
 					RESULT <= AUX;
 					
-				ELSIF(IR(7 DOWNTO 4) = SUB) THEN
-					RESULT15 := STD_LOGIC_VECTOR(signed(X_SOMA) + signed(Y_SOMA));
-
-					-- Trunca RESULT15 para 8 bits e atribui a AUX
-					AUX := RESULT15(7 downto 0);
-
-					-- Verificação de overflow usando comparação
+				ELSIF(IR(7 DOWNTO 4) = SUB or IR(7 DOWNTO 4) = CMP) THEN
+					RESULT15 := STD_LOGIC_VECTOR(signed(X_SOMA) - signed(Y_SOMA));
+					
 					if (signed(RESULT15) > signed(SUPERIOR)) THEN  -- Limite máximo
 						FRover <= '1';  -- Overflow: resultado maior que o maior valor positivo
 					elsif (signed(RESULT15) < signed(INFERIOR)) THEN  -- Limite mínimo
 						FRover <= '1';  -- Overflow: resultado menor que o maior valor negativo
 					else
 						FRover <= '0';  -- Sem overflow
+					end if;
+					
+					--saidaRR <= RESULT15(7 downto 0);
+					--saidaA <= RESULT15(15 downto 8);
+					
+					if (RESULT15(15) = '1') then
+						FRzero <= '0';
+						FRmaior <= '0';
+						FRmenor <= '1';
+						AUX := STD_LOGIC_VECTOR(unsigned(NOT RESULT15(7 downto 0))+1);
+					elsif (RESULT15(15 DOWNTO 0) = "0000000000000000") then
+						FRzero <= '1';
+						FRmaior <= '0';
+						FRmenor <= '0';
+						AUX := STD_LOGIC_VECTOR(RESULT15(7 downto 0));
+					else
+						FRzero <= '0';
+						FRmaior <= '1';
+						FRmenor <= '0';
+						AUX := STD_LOGIC_VECTOR(RESULT15(7 downto 0));
 					end if;
 					
 					RESULT <= AUX;
@@ -740,33 +844,7 @@ END PROCESS;
 				ELSIF(IR(7 DOWNTO 4) = NOT1) THEN
 				
 					RESULT <= NOT X;
-				
-				ELSIF(IR(7 DOWNTO 4) = CMP) THEN
-					RESULT15 := STD_LOGIC_VECTOR(signed(X_SOMA) + signed(Y_SOMA));
 
-					-- Trunca RESULT15 para 8 bits e atribui a AUX
-					AUX := RESULT15(7 downto 0); 
-
-					-- Verificação de overflow usando comparação
-					if (signed(RESULT15) > signed(SUPERIOR)) THEN  -- Limite máximo
-						FRover <= '1';  -- Overflow: resultado maior que o maior valor positivo
-					elsif (signed(RESULT15) < signed(INFERIOR)) THEN  -- Limite mínimo
-						FRover <= '1';  -- Overflow: resultado menor que o maior valor negativo
-					else
-						FRover <= '0';  -- Sem overflow
-					end if;
-					
-					if (AUX = "00000000") then
-						FRzero <= '1';
-						FRmaior <= '0';
-					elsif signed(AUX) > 0 then
-						FRzero <= '0';
-						FRmaior <= '1';
-					else
-						FRzero <= '0';
-						FRmaior <= '0';
-					end if;
-					
 				END IF;
 					--saidaRR <= RESULT;
 			ELSE
@@ -777,6 +855,7 @@ END PROCESS;
 	saidaA <= RA;
 	zero <= FRzero;
 	maior <= FRmaior;
+	menor <= FRmenor;
 	over <= FRover;
 
 end main;

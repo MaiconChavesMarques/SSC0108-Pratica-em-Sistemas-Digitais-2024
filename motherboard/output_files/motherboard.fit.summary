@@ -1,13 +1,13 @@
-Fitter Status : Successful - Sun Nov 10 23:24:49 2024
-Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Fitter Status : Successful - Fri Nov 15 18:33:14 2024
+Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : motherboard
 Top-level Entity Name : motherboard
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 235 / 18,480 ( 1 % )
-Total registers : 0
-Total pins : 61 / 224 ( 27 % )
+Logic utilization (in ALMs) : 199 / 18,480 ( 1 % )
+Total registers : 107
+Total pins : 62 / 224 ( 28 % )
 Total virtual pins : 0
 Total block memory bits : 2,048 / 3,153,920 ( < 1 % )
 Total RAM Blocks : 1 / 308 ( < 1 % )
