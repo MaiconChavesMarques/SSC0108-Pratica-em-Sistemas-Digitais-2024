@@ -3,99 +3,99 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'cpu:inst1|INIT_ULA'
-Slack : -12.281
-TNS   : -135.438
+Slack : -12.139
+TNS   : -133.503
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -9.354
-TNS   : -543.453
+Slack : -10.167
+TNS   : -549.899
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : -5.686
-TNS   : -58.392
+Slack : -5.568
+TNS   : -19.000
 
 Type  : Slow 1100mV 85C Model Hold 'cpu:inst1|INIT_ULA'
-Slack : 0.126
+Slack : 1.003
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -2.636
-TNS   : -195.001
+TNS   : -193.401
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'cpu:inst1|INIT_ULA'
-Slack : 0.204
+Slack : 0.210
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'cpu:inst1|INIT_ULA'
-Slack : -12.269
-TNS   : -135.226
+Slack : -12.100
+TNS   : -132.864
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -8.818
-TNS   : -515.672
+Slack : -9.501
+TNS   : -521.895
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : -5.531
-TNS   : -61.023
+Slack : -5.412
+TNS   : -20.592
 
 Type  : Slow 1100mV 0C Model Hold 'cpu:inst1|INIT_ULA'
-Slack : 0.163
+Slack : 1.043
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -2.636
-TNS   : -192.885
+TNS   : -191.296
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'cpu:inst1|INIT_ULA'
-Slack : 0.267
+Slack : 0.238
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'cpu:inst1|INIT_ULA'
-Slack : -5.688
-TNS   : -61.833
+Slack : -5.647
+TNS   : -61.395
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -5.122
-TNS   : -236.153
+Slack : -5.216
+TNS   : -240.253
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : -3.104
-TNS   : -30.280
+Slack : -3.042
+TNS   : -9.303
 
 Type  : Fast 1100mV 85C Model Hold 'cpu:inst1|INIT_ULA'
-Slack : 0.022
+Slack : 0.524
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -2.174
-TNS   : -114.657
+TNS   : -113.916
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cpu:inst1|INIT_ULA'
-Slack : 0.276
+Slack : 0.221
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'cpu:inst1|INIT_ULA'
-Slack : -5.407
-TNS   : -58.965
+Slack : -5.329
+TNS   : -58.292
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -4.199
-TNS   : -199.265
+Slack : -4.354
+TNS   : -201.004
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : -3.076
-TNS   : -34.199
+Slack : -3.026
+TNS   : -11.794
 
 Type  : Fast 1100mV 0C Model Hold 'cpu:inst1|INIT_ULA'
-Slack : 0.039
+Slack : 0.507
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -2.174
-TNS   : -114.387
+TNS   : -113.762
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'cpu:inst1|INIT_ULA'
-Slack : 0.328
+Slack : 0.267
 TNS   : 0.000
 
 ------------------------------------------------------------

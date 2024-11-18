@@ -831,7 +831,11 @@ END PROCESS;
 						AUX := STD_LOGIC_VECTOR(RESULT15(7 downto 0));
 					end if;
 					
-					RESULT <= AUX;
+					IF IR(7 DOWNTO 4) = SUB THEN
+						RESULT <= AUX;
+					ELSE
+						RESULT <= RR;
+					END IF;
 					
 				ELSIF(IR(7 DOWNTO 4) = AND1) THEN
 				

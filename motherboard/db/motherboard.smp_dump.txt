@@ -1,0 +1,8 @@
+
+State Machine - |motherboard|cpu:inst1|state
+Name state.exec2 state.exec state.decode state.fetch2 state.fetch 
+state.fetch 0 0 0 0 0 
+state.fetch2 0 0 0 1 1 
+state.decode 0 0 1 0 1 
+state.exec 0 1 0 0 1 
+state.exec2 1 0 0 0 1 
