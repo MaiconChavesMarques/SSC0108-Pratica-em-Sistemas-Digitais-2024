@@ -10,14 +10,14 @@ Cyclone V: 5CEBA4F23C7
 
 Implementar e testar um circuito latch RS.
 
-![circuito](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte01/RTL.png?raw=true)
+![circuito](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte01/RTL.png)
 
 
-![circuito2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte01/TMV.png?raw=true)
+![circuito2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte01/TMV.png)
 
 Após compilar no Quartus, usamos o ModelSim para fazer a simulação:
 
-![simulacao](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte01/Simulacao01.png?raw=true)
+![simulacao](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte01/Simulacao01.png)
 
 
 ## Parte 2
@@ -32,13 +32,13 @@ LED QA: LEDR[0] - PIN_AA2
 
 LED QB: LEDR[1] - PIN_AA1
 
-![circuitop2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte02/RTL.png?raw=true)
+![circuitop2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte02/RTL.png)
 
-![circuito2top2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte02/TMV.png?raw=true)
+![circuito2top2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte02/TMV.png)
 
 Compilando e simulando:
 
-![simp2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte02/Simulacao02.png?raw=true)
+![simp2](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte02/Simulacao02.png)
 
 ## Parte 3
 
@@ -52,13 +52,13 @@ LED QA: LEDR[0] - PIN_AA2
 
 LED QB: LEDR[1] - PIN_AA1
 
-![circuitop3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte03/RTL.png?raw=true)
+![circuitop3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte03/RTL.png)
 
-![circuito2p3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte03/TMV.png?raw=true)
+![circuito2p3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte03/TMV.png)
 
 Compilando e simulando
 
-![sim3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte03/Simulacao03.png?raw=true)
+![sim3](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte03/Simulacao03.png)
 
 ## Parte 4
 
@@ -74,10 +74,10 @@ LED QFFUP: LEDR[1] - PIN_AA1
 
 LED QFFDOWN: LEDR[0] - PIN_AA2
 
-![circuitop4](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte04/RTL.png?raw=true)
+![circuitop4](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte04/RTL.png)
 
-![circuito2p4](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte04/TMV.png?raw=true)
+![circuito2p4](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte04/TMV.png)
 
 Compilando e simulando:
 
-![sim04](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203_%20Atividade%20com%20Latch%20e%20FF/Parte04/Simulacao04.png?raw=true)
+![sim04](https://github.com/MaiconChavesMarques/SSC0108-Pratica-em-Sistemas-Digitais-2024/blob/main/Aula%202%20e%203%20-%20Atividade%20com%20Latch%20e%20FF/Parte04/Simulacao04.png)
